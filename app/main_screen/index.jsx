@@ -15,8 +15,7 @@ import Img from "../../assets/images/undraw_Celebrating_rtuv.png";
 import Animated, { FadeInDown } from "react-native-reanimated";
 export default function index() {
 	const [londing, setLonding] = useState(false);
-	 
-	let a = 0;
+
 	const data = [
 		{
 			id: 1,
@@ -117,18 +116,7 @@ export default function index() {
 	];
 
 	return (
-		<Animated.View
-			entering={FadeInDown.duration(600)}
-			style={{
-				flex: 1,
-				display: "flex",
-				justifyContent: "center",
-				alignItems: "center",
-				padding: 10,
-				backgroundColor: color,
-				color: text,
-			}}
-		>
+		<Animated.View entering={FadeInDown.duration(600)} style={style.container}>
 			<ScrollView style={{ flex: 1, display: "flex" }}>
 				<Animated.Text entering={FadeInDown.duration(700)} style={style.mText}>
 					Home
@@ -185,10 +173,10 @@ export default function index() {
 						entering={FadeInDown.duration(900)}
 						style={style.Box}
 					></Animated.View>
-					<Animated.View entering={FadeInDown.duration(900)} style={style.Box}>
-						 
-					</Animated.View>
-					<View style={{ backgroundColor: color, height: 100 }}></View>
+					<Animated.View
+						entering={FadeInDown.duration(900)}
+						style={style.Box}
+					></Animated.View>
 				</View>
 			</ScrollView>
 		</Animated.View>
@@ -196,7 +184,15 @@ export default function index() {
 }
 
 const style = StyleSheet.create({
-	container: {},
+	container: {
+		flex: 1,
+		display: "flex",
+		justifyContent: "center",
+		alignItems: "center",
+		padding: 10,
+		backgroundColor: "#fff",
+		color: "#000",
+	},
 	mText: {
 		fontSize: 25,
 		fontWeight: 600,
@@ -242,5 +238,6 @@ const style = StyleSheet.create({
 		borderRadius: 10,
 		borderWidth: 1,
 		marginTop: 15,
+		backgroundColor: "#3c5665",
 	},
 });

@@ -1,29 +1,30 @@
 {
 	"expo": {
 		"name": "Test App",
-		"slug": "Test App",
+		"slug": "TestApp",
 		"version": "1.0.0",
 		"orientation": "portrait",
 		"icon": "./assets/images/play_store_512.png",
 		"scheme": "myapp",
 		"userInterfaceStyle": "automatic",
 		"newArchEnabled": true,
-
 		"ios": {
 			"supportsTablet": true
 		},
-		"splash": {
-			"image": "./assets/images/play_store_512.png", 
-			"resizeMode": "contain",       
-			"backgroundColor": "#6C63FF",
-			"imageWidth": 50  
-		  },
 
+	 
+		"splash": {
+			"image": "./assets/images/play_store_512.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#6C63FF",
+			"imageWidth": 50
+		},
 		"android": {
 			"adaptiveIcon": {
 				"foregroundImage": "./assets/images/play_store_512.png",
 				"backgroundColor": "#ffffff"
-			}
+			},
+			"package": "com.sanjayop.TestApp"
 		},
 		"web": {
 			"bundler": "metro",
@@ -44,6 +45,14 @@
 		],
 		"experiments": {
 			"typedRoutes": true
+		},
+		"extra": {
+			"router": {
+				"origin": false
+			},
+			"eas": {
+				"projectId": "ba4c86fc-2276-454e-bad4-5a414dcb7497"
+			}
 		}
 	}
 }

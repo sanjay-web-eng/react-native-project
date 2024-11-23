@@ -29,8 +29,7 @@ export default function index_two() {
 					let's start
 				</Link>
 			</Animated.View>
-			<Text>{num}</Text>
-		</View>
+ 		</View>
 	);
 }
 
