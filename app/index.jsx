@@ -1,13 +1,12 @@
-import { View, Text, Image, StyleSheet, Platform } from "react-native";
-import React, { useEffect , useState } from "react";
+import { View, Text, Image, StyleSheet, Platform, StatusBar } from "react-native";
+import React, { useEffect, useState } from "react";
 import Animated, { FadeInDown } from "react-native-reanimated";
 import Img from "../assets/images/undraw_welcome_cats_thqn.png";
 import { Link } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 
 export default function index_two() {
-	 
- 	useEffect(() => {
+	useEffect(() => {
 		async function SplashScreen() {
 			try {
 				await SplashScreen.preventAutoHideAsync();
@@ -22,6 +21,7 @@ export default function index_two() {
 	}, []);
 	return (
 		<View style={style.container}>
+			<StatusBar backgroundColor={"#fff"} barStyle={"dark-content"} />
 			<Animated.View entering={FadeInDown.duration(300)} style={style.button}>
 				<Image source={Img} style={style.img} />
 				<Text style={style.text}>welcome to our app</Text>
@@ -29,7 +29,7 @@ export default function index_two() {
 					let's start
 				</Link>
 			</Animated.View>
- 		</View>
+		</View>
 	);
 }
 

@@ -37,7 +37,7 @@
 				"expo-splash-screen",
 				{
 					"image": "./assets/images/play_store_512.png",
-					"imageWidth": 200,
+					"imageWidth": 100,
 					"resizeMode": "contain",
 					"backgroundColor": "#ffffff"
 				}

@@ -125,16 +125,24 @@ export default function index() {
 					<TextInput placeholder="search" style={style.searchText} />
 				</Animated.View>
 				<View style={{ flex: 1, width: "100%", padding: 5 }}>
-					<Animated.View
-						entering={FadeInDown.duration(900)}
-						style={style.Box}
-					></Animated.View>
+				<Animated.View entering={FadeInDown.duration(900)} style={style.Box}>
+						<View style={style.box1}>
+							<Image
+								source={Img}
+								style={{ height: 150, width: 150, objectFit: "cover" }}
+							/>
+						</View>
+						<View style={style.box2}>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvfvv</Text>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvds r8r8f8</Text>
+						</View>
+					</Animated.View>
 					<Animated.View
 						style={{ height: 215, marginLeft: 0 }}
 						entering={FadeInDown.duration(1000)}
 					>
 						{londing ? (
-							<ActivityIndicator color="#000" size={30} />
+							<ActivityIndicator color="#000" size={50} />
 						) : (
 							<FlatList
 								data={data}
@@ -161,22 +169,79 @@ export default function index() {
 							/>
 						)}
 					</Animated.View>
-					<Animated.View
-						entering={FadeInDown.duration(900)}
-						style={style.Box}
-					></Animated.View>
-					<Animated.View
-						entering={FadeInDown.duration(900)}
-						style={style.Box}
-					></Animated.View>
-					<Animated.View
-						entering={FadeInDown.duration(900)}
-						style={style.Box}
-					></Animated.View>
-					<Animated.View
-						entering={FadeInDown.duration(900)}
-						style={style.Box}
-					></Animated.View>
+
+					<Animated.View entering={FadeInDown.duration(900)} style={style.Box}>
+						<View style={style.box2}>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvfvv</Text>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvds r8r8f8</Text>
+						</View>
+						<View style={style.box1}>
+							<Image
+								source={Img}
+								style={{ height: 150, width: 150, objectFit: "cover" }}
+							/>
+						</View>
+					</Animated.View>
+					<Animated.View entering={FadeInDown.duration(900)} style={style.Box}>
+						<View style={style.box2}>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvfvv</Text>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvds r8r8f8</Text>
+						</View>
+						<View style={style.box1}>
+							<Image
+								source={Img}
+								style={{ height: 150, width: 150, objectFit: "cover" }}
+							/>
+						</View>
+					</Animated.View>
+					<Animated.View entering={FadeInDown.duration(900)} style={style.Box}>
+						<View style={style.box2}>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvfvv</Text>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvds r8r8f8</Text>
+						</View>
+						<View style={style.box1}>
+							<Image
+								source={Img}
+								style={{ height: 150, width: 150, objectFit: "cover" }}
+							/>
+						</View>
+					</Animated.View>
+					<Animated.View entering={FadeInDown.duration(900)} style={style.Box}>
+						<View style={style.box2}>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvfvv</Text>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvds r8r8f8</Text>
+						</View>
+						<View style={style.box1}>
+							<Image
+								source={Img}
+								style={{ height: 150, width: 150, objectFit: "cover" }}
+							/>
+						</View>
+					</Animated.View>
+					<Animated.View entering={FadeInDown.duration(900)} style={style.Box}>
+						<View style={style.box2}>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvfvv</Text>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvds r8r8f8</Text>
+						</View>
+						<View style={style.box1}>
+							<Image
+								source={Img}
+								style={{ height: 150, width: 150, objectFit: "cover" }}
+							/>
+						</View>
+					</Animated.View>
+					<Animated.View entering={FadeInDown.duration(900)} style={style.Box}>
+						<View style={style.box1}>
+							<Image
+								source={Img}
+								style={{ height: 150, width: 150, objectFit: "cover" }}
+							/>
+						</View>
+						<View style={style.box2}>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvfvv</Text>
+							<Text style={{ fontSize: 25, fontWeight: 500 }}>dfvfvds r8r8f8</Text>
+						</View>
+					</Animated.View>
 				</View>
 			</ScrollView>
 		</Animated.View>
@@ -194,9 +259,9 @@ const style = StyleSheet.create({
 		color: "#000",
 	},
 	mText: {
-		fontSize: 25,
-		fontWeight: 600,
-		marginTop: 20,
+		fontSize: 35,
+		fontWeight: 700,
+		marginTop: 10,
 		padding: 5,
 	},
 	search: {
@@ -234,10 +299,23 @@ const style = StyleSheet.create({
 	Box: {
 		backgroundColor: "#ffff",
 		width: "100%",
-		height: 150,
+		height: 190,
 		borderRadius: 10,
 		borderWidth: 1,
 		marginTop: 15,
-		backgroundColor: "#3c5665",
+		//	backgroundColor: "#3c5665",
+		backgroundColor: "#FFF",
+		display: "flex",
+		justifyContent: "center",
+		alignItems: "center",
+		position: "relative",
+	},
+	box1: {
+		position: "absolute",
+		right: 5,
+	},
+	box2: {
+		position: "absolute",
+		left: 10,
 	},
 });
